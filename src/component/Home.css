@@ -1,0 +1,375 @@
+.homeBarBackground{
+    width: 100%;
+    height: 64rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('./nayePankh-backgroundimg.avif');
+    background-size:cover;
+    background-position: center;
+}
+.homeBarBackground h2{
+    z-index: 10;
+    color:#fff;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+.homeBarBackground .smileFaces{
+    z-index: 10;
+    color:#fff;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    width: 30%;
+    margin-left: 5rem;
+}
+.homeBarBackground .smileFaces h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.homeBarBackground .smileFaces button{
+ margin: 2rem 0;
+ padding: 1rem 2rem;
+ color: red;
+ background-color: #000;
+}
+
+/*  */
+.homesection{
+    background-color:black;
+    height: 752px;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.childteeth{
+    width: 50%;
+    height: 752px;
+}
+.homesection .childteeth img{
+   height:100%;
+    width: 100%;
+   object-fit:cover;
+   padding:0 0 0 5rem;
+  
+}
+.aboutUsSection{
+    width: 50%;
+    height: 752px;
+    background-color: black;
+    color: #fff;
+    padding: 5rem 7rem;
+}
+.aboutUsSection h1{
+    font-size: 4rem;
+}
+.aboutUsSection .para1{
+    letter-spacing: 10px;
+}
+.aboutUsSection p{
+    line-height: 28px;
+}
+.learnButton{
+    margin-top: 5rem;
+}
+.learnButton .learnbtn{
+    padding: 16px 16px;
+    margin:0 30px 0 0;
+    width: 10rem;
+}
+.learnButton .learnbtn:hover{
+    background-color: #000;
+    color: #fff;
+}
+/*  */
+.welcomeSection{
+   background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./nayePankhpic3.webp");
+    width: 100%;
+    height: 40rem;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.nayePankhFoundationSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    color: #fff;
+    /* padding-top: 1rem; */
+}
+.nayePankhFoundationSection h1{
+    font-size: 6rem;
+  
+}
+.nayePankhFoundationSection .AbouNgo{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+.para2{
+    margin-top: 6rem;
+}
+
+/*  */
+.founderSection{
+    width: 100%;
+    height: 40rem;
+    background-color: rgb(29, 30, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.founderStatement{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.founderStatement h1{
+    font-size: 4rem;
+}
+.supportSection{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.support1{
+    margin-right:7rem;
+}
+/* tablet width */
+
+@media only screen and (max-width: 900px) {
+    .homeBarBackground{
+        height: 50rem;
+        background-position: center center;
+        /* background-attachment: fixed; */
+    }
+    .homeBarBackground h2{
+        top: 150px;
+        left: 35px;
+    }
+    .homeBarBackground .smileFaces{
+        position: absolute;
+        top: 300px;
+        left: 40px;
+        width: 30%;
+        margin-left: 3rem;
+    }
+    .homeBarBackground .smileFaces h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .homesection{
+        height:90%;
+        display: flex;
+        flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .aboutUsSection{
+        width: 100%;
+        height: 50%;
+        background-color: black;
+        color: #fff;
+        padding: 5rem 7rem;
+    }
+    .homesection .childteeth img{
+        height:90%;
+         width: 100%;
+        object-fit:cover;
+        padding:0 0 0 1rem;
+       
+     }
+     /*  */
+     .nayePankhFoundationSection h1{
+        font-size: 3rem;
+      
+    }
+    .nayePankhFoundationSection .AbouNgo{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .founderStatement h1{
+        font-size: 3rem;
+    }
+    .supportSection{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .support1{
+        margin-right:4.5rem;
+    }
+  }
+  /* small tablet width */
+
+  
+@media only screen and (max-width: 768px) {
+    .homeBarBackground{
+        height: 50rem;
+        background-position: center center;
+        /* background-attachment: fixed; */
+    }
+    .homeBarBackground h2{
+        top: 180px;
+        left: 30px;
+    }
+    .homeBarBackground .smileFaces{
+        position: absolute;
+        top: 300px;
+        left: 40px;
+        width: 30%;
+        margin-left: 3rem;
+    }
+    .homeBarBackground .smileFaces h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .homeBarBackground .smileFaces button{
+        margin: 2rem 0;
+        padding: 1rem 2rem;
+       }
+    .homesection{
+        height:90%;
+        display: flex;
+        flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .aboutUsSection{
+        width: 100%;
+        height: 50%;
+        background-color: black;
+        color: #fff;
+        padding: 5rem 7rem;
+    }
+    .learnButton .learnbtn{
+        padding: 16px 16px;
+        margin:30px 30px 0 30px;
+        width: 10rem;
+    }
+    .homesection .childteeth img{
+        height:90%;
+         width: 100%;
+        object-fit:cover;
+        object-position: center;
+        padding:0 0 0 1rem;
+       
+     }
+     /*  */
+     .nayePankhFoundationSection h1{
+        font-size: 2.5rem;
+      
+    }
+    .nayePankhFoundationSection .AbouNgo{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .founderStatement h1{
+        font-size: 3rem;
+    }
+    .supportSection{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .support1{
+        margin-right:4.5rem;
+    }
+  }
+
+  /* mobile width */
+
+  
+@media only screen and (max-width: 468px) {
+    .homeBarBackground{
+        height: 50rem;
+        background-position: center center;
+        /* background-attachment: fixed; */
+    }
+    .homeBarBackground h2{
+        top: 180px;
+        left: 25px;
+    }
+    .homeBarBackground .smileFaces{
+        position: absolute;
+        top: 300px;
+        left: 40px;
+        width: 30%;
+        margin-left: 3rem;
+    }
+    .homeBarBackground .smileFaces h1{
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .homeBarBackground .smileFaces button{
+        margin: 2rem 0;
+        padding: 1rem 2rem;
+       }
+    .homesection{
+        height:90%;
+        display: flex;
+        flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .aboutUsSection{
+        width: 100%;
+        height: 50%;
+        background-color: black;
+        color: #fff;
+        padding: 5rem 7rem;
+    }
+    .learnButton .learnbtn{
+        padding: 16px 16px;
+        margin:30px 30px 0 30px;
+        width: 10rem;
+    }
+    .homesection .childteeth img{
+        height:90%;
+         width: 100%;
+        object-fit:cover;
+        object-position: center;
+        padding:0 0 0 1rem;
+       
+     }
+     /*  */
+     .nayePankhFoundationSection h1{
+        font-size: 2.5rem;
+      
+    }
+    .nayePankhFoundationSection .AbouNgo{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .founderStatement h1{
+        font-size: 2rem;
+    }
+    .supportSection{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .support1{
+        margin-right:4.5rem;
+    }
+  }

@@ -1,0 +1,71 @@
+  .loginbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .formContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0;   
+    padding: 4rem;
+    box-shadow: 0 5px 8px 8px rgba(0,0,0,0.6);
+  }
+  .formContent input,button{
+    margin: 10px 0;
+  }
+  
+  .creat{
+    color: green;
+    margin-top:10px;
+    padding-left: 20px;
+  }
+  .inputcontent {
+    background-color:transparent;
+    border-bottom: 2px solid;
+    margin: 14px 0;
+    position: relative;
+  }
+  .inputcontent input{
+    border: none;
+    /* background-color:rgba(132,151,201); */
+    outline: none;
+    margin-top: 18px;
+  }
+ 
+  .inputcontent label{
+    position: absolute;
+    left: 0;
+    top:-10px;
+  }
+
+  .linkto{
+    list-style: none;
+   text-decoration: none;
+  }
+.loginbtn1{
+  color:#000;
+  border-radius: 8px;
+}
+.loginbtn2{
+  border-radius: 8px;
+}
+.linkto{
+  color:#000;
+}
+.linkto:hover{
+  background-color: #000;
+  color: #fff;
+}
+.loginbtn1:hover{
+  background-color: #000;
+  color: #fff;
+}
+.loginbtn2:hover{
+  background-color: #000;
+  color: #fff;
+}
