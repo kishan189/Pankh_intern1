@@ -25,11 +25,11 @@ export default function Login() {
     const{email,password}=user
     if(email && password){
   
-     axios.post("http://localhost:4000/login",{email,password})
+     axios.post("https://nayepankh-auth.onrender.com/login",{email,password})
      .then(res=>{
       console.log(res);
       if(res.data==="success"){
-        // alert("welcome to home page");
+        alert("welcome to home page");
         navigate('/Home');
         
       }

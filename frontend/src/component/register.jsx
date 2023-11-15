@@ -6,7 +6,7 @@ import "./from.css";
 import { Link } from 'react-router-dom';
 export default function Register() {
   const[user,setUser]=useState({
-    name:"",
+    Name:"",
     email:"",
     password:"",
     repass:""
@@ -17,7 +17,7 @@ const myfun=async(e)=>{
   const{Name,email,password,repass}=user
   if(Name && email && password && (password===repass)){
   
-   axios.post("http://localhost:4000/register",{Name,email,password})
+   axios.post("https://nayepankh-auth.onrender.com/register",{Name,email,password})
      .then(res=>{
       console.log(res);
       if(res.data==="already existed"){

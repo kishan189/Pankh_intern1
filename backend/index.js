@@ -7,7 +7,7 @@ app.use(express.json());
 // mongoose.connect('mongodb://0.0.0.0:27017/login');
 // mongodb+srv://kishan20372:<password>@cluster0.wtacofy.mongodb.net/
 
-mongoose.connect('mongodb+srv://kishan20372:kishan@cluster0.wtacofy.mongodb.net/').then(()=>{
+mongoose.connect('mongodb://0.0.0.0:27017/login').then(()=>{
     console.log("connection successfull");
 }).catch((err)=>console.log(err));
 const mongoSchema= new mongoose.Schema({
@@ -19,8 +19,10 @@ const mongoSchema= new mongoose.Schema({
 const User= mongoose.model('users',mongoSchema);
 
 
+
 app.post("/register",(req,res)=>{
-    const{email,password}=req.body;
+    try{
+        const{email}=req.body;
         User.findOne({email:email})
         .then(user =>{
             if(user){
@@ -36,12 +38,15 @@ app.post("/register",(req,res)=>{
             }
            
         })
-        .catch(err=>res.json(err))
-
-      
+    }  catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
+      }
+     
 })
 
 app.post("/login", (req,res)=>{
+   try{
     const{email,password}=req.body;
     User.findOne({email:email})
     .then(user=>{
@@ -58,10 +63,17 @@ app.post("/login", (req,res)=>{
             res.json("No record existed")
         }
     })
+   }  catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+   
     
 })
 
 
 
 
-app.listen(4000);
+app.listen((4000),()=>{
+    console.log("started at port 4000");
+});
