@@ -6,8 +6,9 @@ app.use(cors());
 app.use(express.json());
 // mongoose.connect('mongodb://0.0.0.0:27017/login');
 // mongodb+srv://kishan20372:<password>@cluster0.wtacofy.mongodb.net/
+// mongodb+srv://kishan20372:Kishan@cluster0.qswci5a.mongodb.net
 
-mongoose.connect('mongodb://0.0.0.0:27017/login').then(()=>{
+mongoose.connect('mongodb+srv://kishan20372:Kishan@cluster0.qswci5a.mongodb.net/login').then(()=>{
     console.log("connection successfull");
 }).catch((err)=>console.log(err));
 const mongoSchema= new mongoose.Schema({
