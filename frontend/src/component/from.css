@@ -50,17 +50,19 @@
 .loginbtn1{
   color:#000;
   border-radius: 8px;
+  padding: 0.5rem 1rem;
 }
 .loginbtn2{
   border-radius: 8px;
+  padding: 0.5rem 1rem;
 }
 .linkto{
   color:#000;
 }
-.linkto:hover{
+/* .linkto:hover{
   background-color: #000;
   color: #fff;
-}
+} */
 .loginbtn1:hover{
   background-color: #000;
   color: #fff;
@@ -68,4 +70,17 @@
 .loginbtn2:hover{
   background-color: #000;
   color: #fff;
+}
+/* mobile width */
+@media only screen and (max-width: 468px){
+  .loginbtn1{
+    font-size: 12px;
+     padding: 2px 8px;
+     width: 8rem;
+  }
+  .loginbtn2{
+    font-size: 12px;
+    padding:4px 8px;
+    width: 10rem;
+  }
 }

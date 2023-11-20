@@ -1,0 +1,41 @@
+
+.donationSection{
+    background-color: #000;
+    color: #fff;
+}
+.DonationPic{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.DonationPic img{
+    width: 86%;
+    margin: 2rem;
+}
+.middPic{
+    height: 80%;
+}
+/*  */
+.TogetherDonate{
+    width: 80%;
+    margin-left: 4rem;
+    display: flex;
+}
+.TogetherDonate h1{
+    font-size: 4rem;
+}
+.TogetherDonate h1 button{
+    padding: 1rem 3rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.TogetherDonate h1 button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.para3{
+    width: 85%;
+    /* text-align: center; */
+    margin-left: 4rem;
+}

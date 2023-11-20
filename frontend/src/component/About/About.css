@@ -1,0 +1,95 @@
+
+.aboutSection{
+    width: 100%;
+    height: 54rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("/src/component/About/images/aboutPic2.avif");
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whoText{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.whoText p{
+    font-size: 2rem;
+}
+.whoText h1{
+    font-size: 5rem;
+}
+/*  */
+.HowStartedSection{
+    background-color: #000;
+    color: #fff;
+}
+.HowStarted{
+    display: flex;
+}
+.StartedText{
+    width: 40%;
+    margin-left: 5rem;
+    margin-top:3rem ;
+}
+.StartedPic{
+    width: 50%;
+    margin-top:3rem ;
+}
+.StartedPic img{
+    width: 100%;  
+}
+/*  */
+.whatisSection{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+}
+/* tbalet width */
+@media only screen and (max-width: 768px){
+    .HowStarted{
+        display: flex;
+        flex-direction: column;
+    }
+    .StartedText{
+        width: 90%;
+        margin-left: 1rem;
+        margin-top:2rem ;
+    }
+    .StartedPic{
+        width: 100%;  
+    }
+    .StartedPic img{
+        width: 100%;  
+    }
+    .whatisSection{
+        margin-left: 4rem;
+    }
+}
+@media only screen and (max-width: 468px){
+    .HowStarted{
+        display: flex;
+        flex-direction: column;
+    }
+    .StartedText{
+        width: 90%;
+        margin-left: 1rem;
+        margin-top:2rem ;
+    }
+    .StartedPic{
+        width: 100%;
+       
+    }
+    .StartedPic img{
+        width: 100%;  
+    }
+    .whatisSection{
+        margin-left: 4rem;
+    }
+}

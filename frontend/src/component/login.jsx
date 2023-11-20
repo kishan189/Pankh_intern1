@@ -2,10 +2,10 @@ import React, {useState } from 'react';
 import {Link,useNavigate } from 'react-router-dom';
 import {VscMail} from "react-icons/vsc";
 import {VscLock} from "react-icons/vsc";
-
 import axios from 'axios';
 import "./from.css";
 export default function Login() {
+ 
   const navigate=useNavigate();
   const[user,setUser]=useState({
     email:"",
@@ -22,21 +22,21 @@ export default function Login() {
 
   const myfun=(e)=>{
     e.preventDefault();
-    const{email,password}=user
+    const{email,password}=user;
+    // conts [username,setUsername]=useState();
     if(email && password){
-  
-     axios.post("http://localhost:4000/login",{email,password})
+  // http://localhost:4000
+  // https://mylogin-nayepankh.onrender.com
+     axios.post("https://mylogin-nayepankh.onrender.com/login",{email,password})
      .then(res=>{
       console.log(res);
       if(res.data==="success"){
-        alert("welcome to home page");
-        navigate('/Home');
-        
+        navigate('/Mypage');
       }
-      else if(res.data==="password is incorrect"){ 
+       else if(res.data==="the password is incorrect"){ 
         alert("password is incorrect");
       }
-      else{
+      else if(res.data==="No record existed"){
         alert("user not found ");
       }
      })
@@ -64,7 +64,7 @@ export default function Login() {
                   <input id="inputpass" type="password" name='password' value={user.password} onChange={hadleChange} />
                  </div>  
                     <button className="loginbtn1" type="submit">Log in</button>
-                  <button  className="loginbtn2"><Link to='/register' className='linkto'>Sign up for Nayepankh?</Link></button>
+                  <Link to='/register' className='linkto'> <button  className="loginbtn2">Sign up for Nayepankh?</button></Link>
                 </form>         
     </div>
    

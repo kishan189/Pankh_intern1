@@ -1,0 +1,126 @@
+
+.navBarSection{
+    background-color:rgb(29, 30, 32);  
+    /* position: fixed; */
+    width: 100%;
+    z-index: 200;
+}
+.logoDiv{
+    width: 129px;
+    height: 129px;
+    object-fit: cover;
+  
+}
+.logoDiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header{
+    padding: 22px 6.7rem;
+}
+/* hemburger */
+.hemburgerButton{
+    display: none;
+    font-size: 3rem;
+    width: 80px;
+    background-color: #fff;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+ .hemburgerNav{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    top: 10.5rem;
+    right: 0;
+    z-index: 20;
+   height: 40rem;
+   width: 20rem;
+ }
+ .hemburgerNav li {
+    margin: 2rem 8px;
+
+ }
+ 
+/*  */
+.navlist li{
+    margin: 0 1rem;
+    color: #fff;
+}
+.navlist li a{
+    color: #fff;
+}
+.navlist li:hover{
+    text-decoration: underline rgba(255, 204, 172,0.6);
+}
+.navlist li a:hover{
+    color: rgb(255, 204, 172);
+}
+
+@media only screen and (max-width: 900px) {
+    .navlist{
+        display: none;
+    }
+    .hemburgerButton{
+        display: block;
+    }
+    .myhemburgerList .navlist li {
+      margin: 0 0.4rem;
+    }
+  }
+  
+  /*tablet width  */
+  @media only screen and (max-width: 768px) {
+    .navlist{
+        display: none;
+    }
+    .header{
+        padding: 22px 1.5rem;
+    }
+    .hemburgerButton{
+        display: block;
+        font-size: 2rem;
+        width: 60px;
+    }
+    .myhemburgerList .navlist li {
+      margin: 0 0.4rem;
+    }
+    .logoDiv{
+        width: 100px;
+        height: 100px;
+    }
+    .hemburgerNav{
+        width: 50%;
+    }
+  }
+  /* for mobile width */
+  @media only screen and (max-width: 468px) {
+    .navlist{
+        display: none;
+    }
+    .header{
+        padding: 22px 1rem;
+    }
+    .hemburgerButton{
+        display: block;
+        font-size: 1.5rem;
+        width: 40px;
+    }
+    .myhemburgerList .navlist li {
+      margin: 0 0.3rem;
+    }
+    .logoDiv{
+        width: 90px;
+        height: 90px;
+        margin-right: 4rem;
+    }
+    
+    .hemburgerNav{
+        width: 50%;
+    }
+
+  }

@@ -1,0 +1,25 @@
+.certificatesSection{
+    text-align: center;
+    background-color: black;
+}
+.CertificatesPIcs{
+    display: flex;
+}
+.CertificatesPIcs img{
+    margin: 3rem 8rem;
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px){
+    .CertificatesPIcs{
+        display: flex;
+        flex-direction: column;
+    }
+    .CertificatesPIcs img{
+        margin: 1rem 2rem;
+        width: 90%;
+    }
+    .certificatesSection img{
+        width: 90%;
+    }
+}

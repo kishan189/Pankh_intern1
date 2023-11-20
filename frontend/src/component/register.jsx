@@ -16,18 +16,27 @@ const myfun=async(e)=>{
   e.preventDefault();
   const{Name,email,password,repass}=user
   if(Name && email && password && (password===repass)){
-  
-   axios.post("http://localhost:4000/register",{Name,email,password})
+      if(!email.includes("gmail")){
+        alert("pls add gmail in email id")
+      }
+      else if(password.length<4 ){
+       alert("pls enter more than four charector in password");
+      }
+      else{
+      // http://localhost:4000
+     // https://mylogin-nayepankh.onrender.com
+     axios.post("https://mylogin-nayepankh.onrender.com/register",{Name,email,password})
      .then(res=>{
       console.log(res);
       if(res.data==="already existed"){
-        alert("already existed")
+       alert("already existed")
       }
       else{
-        alert("successfully registered");
+       alert("successfully registered");
       }
      })
      .catch(err=>console.log(err))
+    }
   
    }
   else{
@@ -66,7 +75,8 @@ function hadleChange(e){
                   <input id="inputpass" type="password" name='repass' value={user.repass} onChange={hadleChange} />
                  </div>
                     <button className="loginbtn1" type="submit">Sign Up</button>
-                  <button  className="loginbtn2"><Link to='/' className='linkto'>Already have an account?</Link></button>        
+                  {/* <button  className="loginbtn2"><Link to='/' className='linkto'>Already have an account?</Link></button>    */}
+                  <Link to='/' className='linkto'><button className="loginbtn2">Already have an account?</button></Link>     
                 </form>
      </div>
     </>

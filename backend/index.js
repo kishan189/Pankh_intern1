@@ -7,8 +7,9 @@ app.use(express.json());
 // mongoose.connect('mongodb://0.0.0.0:27017/login');
 // mongodb+srv://kishan20372:<password>@cluster0.wtacofy.mongodb.net/
 // mongodb+srv://kishan20372:Kishan@cluster0.qswci5a.mongodb.net
+// mongodb+srv://kishan20372:Kishan@cluster0.qswci5a.mongodb.net
 
-mongoose.connect('mongodb+srv://kishan20372:Kishan@cluster0.qswci5a.mongodb.net/login').then(()=>{
+mongoose.connect('mongodb://0.0.0.0:27017/login').then(()=>{
     console.log("connection successfull");
 }).catch((err)=>console.log(err));
 const mongoSchema= new mongoose.Schema({
@@ -19,6 +20,11 @@ const mongoSchema= new mongoose.Schema({
 
 const User= mongoose.model('users',mongoSchema);
 
+const feedbackSchema=new mongoose.Schema({
+    rating:Number,
+    suggestion:String,
+})
+const FeedUser=new mongoose.model('feedbackData',feedbackSchema);
 
 
 app.post("/register",(req,res)=>{
@@ -43,6 +49,7 @@ app.post("/register",(req,res)=>{
         console.error(error);
         res.status(500).json({ message: 'Internal server error' });
       }
+    //   return;
      
 })
 
@@ -68,11 +75,18 @@ app.post("/login", (req,res)=>{
     console.error(error);
     res.status(500).json({ message: 'Internal server error' });
   }
-   
+//    return ;
     
 })
 
-
+app.post("/feedback", async(req,res)=>{
+    const data=new FeedUser(req.body);
+    const result=await data.save();
+    // res.send(result);
+    console.log(result);
+    res.json("feedbackDone");
+    //  return;
+})
 
 
 app.listen((4000),()=>{

@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.feedback{
+    width: 70%;
+    display: flex;
+    justify-content: center; 
+    margin-left: 15%;
+}
+.feedbackContent{
+    background-color: aquamarine;
+    padding: 3rem 5rem;
+    margin-top: 3rem;
+    box-shadow: 0 10px 8px 10px rgba(0,0,0,0.6);
+}
+
+.feedbackContent h1{
+    color: #000000;
+    text-shadow: 2px 2px 4px #ffffff
+}
+.feedbackContent h1:hover{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000
+}
+
+.feedbackContent p{
+    padding: 1rem 0;
+}
+.inputcontent2{
+    margin: 2rem 0;
+}
+.inputcontent2 textarea{
+    width: 80%;
+  }
+.loginbtn3{
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+}
+.loginbtn3:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+.input{
+    width:14rem ;
+}
+.rangemeter{
+    width: 14rem;
+    height: 4px;
+    margin-left: 28%;
+    margin-bottom: 1rem;
+}
+.rangemeter span{
+    margin: 0 7px;
+}
+.permormance span{
+    margin: 4px 6px;
+    color: red;
+}
+
+/*  for tablet*/
+@media only screen and (max-width: 768px){
+    .feedback{
+        width: 60%;
+    }
+    .feedbackContent{
+        width: 100%;
+        padding: 2rem 3rem;
+        margin-top: 2rem;
+        
+    }
+    
+    .feedbackContent h1{
+     
+        text-shadow: 2px 2px 4px #ffffff
+    }
+    .feedbackContent h1:hover{
+        text-shadow: 2px 2px 4px #000000
+    }
+    
+    .feedbackContent p{
+        padding: 0.8rem 0;
+    }
+    .inputcontent2{
+        margin: 1.5rem 0;
+    }
+    .inputcontent2 textarea{
+      width: 90%;
+    }
+    .loginbtn3{
+        padding: 0.4rem 1rem;
+        border-radius: 10px;
+
+    }
+    
+    .input{
+        width:10rem ;
+    }
+    .rangemeter{
+        width: 100%;
+        height: 4px;
+        margin-left: 0;
+        margin-bottom: 0.7rem;
+    }
+    .rangemeter span{
+        margin: 0 4px;
+    }
+    .permormance span{
+        margin: 3px 5px;
+
+    }
+}
+/* for mobile width */
+@media only screen and (max-width: 468px){
+    .feedback{
+        width: 60%;
+    }
+    .feedbackContent{
+        width: 100%;
+        padding: 1.5rem 2.5rem;
+        margin-top: 1.5rem;
+        
+    }
+    
+    .feedbackContent h1{
+     
+        text-shadow: 2px 2px 4px #ffffff
+    }
+    .feedbackContent h1:hover{
+        text-shadow: 2px 2px 4px #000000
+    }
+    
+    .feedbackContent p{
+        padding: 0.5rem 0;
+    }
+    .inputcontent2{
+        margin: 1rem 0;
+    }
+    .inputcontent2 textarea{
+      width: 100%;
+    }
+    .loginbtn3{
+        padding: 0.3rem 0.7rem;
+        border-radius: 10px;
+
+    }
+    
+    .input{
+        width:7rem ;
+    }
+    .rangemeter{
+        width: 100%;
+        height: 3px;
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+    .rangemeter span{
+        margin: 0 2px;
+        font-size: 14px;
+    }
+    .permormance span{
+        font-size: 8px;
+        margin: 3px 4px;
+
+    }
+}
