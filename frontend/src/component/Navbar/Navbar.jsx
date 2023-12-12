@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { AiOutlineUnorderedList } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 
-export default function MyNavbar(props) {
+export default function MyNavbar() {
   const [mobile, setMobile] = useState(false);
   // console.log(mobile);
   return (
@@ -30,6 +30,9 @@ export default function MyNavbar(props) {
               </Link>
               <Link to="/Feedback" >
                 <li>Feedback</li>
+              </Link>
+              <Link to="/login" >
+                <li>login</li>
               </Link>
               
             </ul>

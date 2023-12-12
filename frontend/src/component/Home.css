@@ -50,7 +50,7 @@
   justify-content: space-between;
 }
 .childteeth{
-    width: 50%;
+    width: 90%;
     height: 752px;
 }
 .homesection .childteeth img{
@@ -307,7 +307,7 @@
   
 @media only screen and (max-width: 468px) {
     .homeBarBackground{
-        height: 50rem;
+        height: 59rem;
         background-position: center center;
         /* background-attachment: fixed; */
     }
@@ -343,7 +343,7 @@
         height: 50%;
         background-color: black;
         color: #fff;
-        padding: 5rem 7rem;
+        padding: 1rem 1rem;
     }
     .learnButton .learnbtn{
         padding: 16px 16px;
@@ -382,4 +382,5 @@
     .support1{
         margin-right:4.5rem;
     }
+    
   }

@@ -11,7 +11,7 @@ export default function Login() {
     email:"",
     password:"",
   });
-  
+   
   function hadleChange(e){
     const{name,value}=e.target;
     setUser({
@@ -32,6 +32,8 @@ export default function Login() {
       console.log(res);
       if(res.data==="success"){
         navigate('/Mypage');
+        
+        
       }
        else if(res.data==="the password is incorrect"){ 
         alert("password is incorrect");

@@ -73,6 +73,9 @@
 }
 /* mobile width */
 @media only screen and (max-width: 468px){
+  .formContent{
+    width: 85%;
+  }
   .loginbtn1{
     font-size: 12px;
      padding: 2px 8px;

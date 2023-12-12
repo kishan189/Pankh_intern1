@@ -2,8 +2,9 @@ import React, {useState } from 'react';
 import {VscMail} from "react-icons/vsc";
 import {VscLock} from "react-icons/vsc";
 import axios from 'axios';
+
 import "./from.css";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 export default function Register() {
   const[user,setUser]=useState({
     Name:"",
@@ -12,6 +13,7 @@ export default function Register() {
     repass:""
   });
  
+  const navigate2=useNavigate();
 const myfun=async(e)=>{
   e.preventDefault();
   const{Name,email,password,repass}=user
@@ -33,6 +35,7 @@ const myfun=async(e)=>{
       }
       else{
        alert("successfully registered");
+       navigate2("/");
       }
      })
      .catch(err=>console.log(err))
