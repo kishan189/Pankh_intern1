@@ -48,7 +48,7 @@ app.post("/register",(req,res)=>{
         console.error(error);
         res.status(500).json({ message: 'Internal server error' });
       }
-    //   return;
+ 
      
 })
 
@@ -74,7 +74,6 @@ app.post("/login", (req,res)=>{
     console.error(error);
     res.status(500).json({ message: 'Internal server error' });
   }
-//    return ;
     
 })
 
@@ -84,7 +83,7 @@ app.post("/feedback", async(req,res)=>{
     // res.send(result);
     console.log(result);
     res.json("feedbackDone");
-    //  return;
+   
 })
 
 

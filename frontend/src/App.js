@@ -18,9 +18,7 @@ function App() {
     
     <Routes>
     <Route path="/register" element={<Register/>}>Register</Route>
-    {/* <Route path="/" element={<Login/>}>Login</Route> */}
     <Route path="/login" element={<Login/>}>Login</Route>
-    {/* <Route path="/Mypage" element={<Mypage  />}></Route> */}
     <Route path="/" element={<Mypage  />}></Route>
          
         <Route exact path='/Mypage' element={<Mypage/>} ></Route>
